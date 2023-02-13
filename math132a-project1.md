@@ -37,9 +37,23 @@
    $$
    3700 \times 5000 + 5300 \times 0 = 18500000 \text{   dollars}
    $$
+   To verify that the solution is unique, we plot out the feasible regions as shown below:
    
+   ![](imgs/plot1.png)
+   
+   We can see from the above plot, that the conditions form a polygon boundary. Since the objective function is not parellel to any of the boundary, there exists an unique optimal to this linear programming problem. Hence there exists an unique solution.
+   
+   
+   
+   
+   
+3. 
 
-12345
 
-master teo
+
+
+
+3. 
+
+
 
