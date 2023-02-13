@@ -42,18 +42,8 @@
    ![](imgs/plot1.png)
    
    We can see from the above plot, that the conditions form a polygon boundary. Since the objective function is not parellel to any of the boundary, there exists an unique optimal to this linear programming problem. Hence there exists an unique solution.
-   
-   
-   
-   
-   
-3. 
 
-
-
-
-
-3. 
+3. The campaign should be undertaken:
 
 
 
