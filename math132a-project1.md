@@ -29,13 +29,13 @@
    We found that the optimal solution is when 
    $$
    \begin{cases}
-    		x_1 \geq 5000\\ 
-    		x_2 \geq 0
+    		x_1 = 3766\\ 
+    		x_2 = 2467
     \end{cases}
    $$
    generating a profit of 
    $$
-   3700 \times 5000 + 5300 \times 0 = 18500000 \text{   dollars}
+   3700 \times 3766 + 5300 \times 2467 = 27009300 \text{   dollars}
    $$
    To verify that the solution is unique, we plot out the feasible regions as shown below:
    
@@ -44,6 +44,3 @@
    We can see from the above plot, that the conditions form a polygon boundary. Since the objective function is not parellel to any of the boundary, there exists an unique optimal to this linear programming problem. Hence there exists an unique solution.
 
 3. The campaign should be undertaken:
-
-
-
