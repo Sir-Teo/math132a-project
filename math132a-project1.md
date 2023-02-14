@@ -25,6 +25,8 @@
    As we can see in the formulation, we want to maximize the profit $z$, which is subject to individual profits of each car model. The first constraint was due to labor hours. The second constraint was due to car doors and the third constraint was brought by the company forecast.
 
 2. Now we will solve the problem using Excel:
+   
+    ![](imgs/excel.png)
 
    We found that the optimal solution is when 
    $$
