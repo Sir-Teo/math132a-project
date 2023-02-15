@@ -236,7 +236,31 @@
 
     Comparing all four scenarios, option 1 generates a profit of $29471200$ dolloars, which is the most. So William Smith should **consider implenting both advertising and overtime labor.**
 
-9. 
+9. With the new time to assemble the Adventurer, assume that William is not implementing advertisesment or overtime labor, and the profit of adventurer did not drop, we have the linear programming problem as follows:
+    $$
+    \begin{cases}
+     		\text{Maximize  } \rightarrow z = 3700x_1 + 5300x_2\\
+     		\text{Subject to:}\\
+     		7.5x_1 +10.5x_2 \leq 48500\\
+     		4x_1 + 2x_2 \leq 20000\\
+     		x_2 \leq 3500\\
+     		x_1 \geq 0, x_2 \geq 0
+     \end{cases}
+    $$
+    We found that the optimal solution is when 
+    $$
+    \begin{cases}
+     		x_1 = 1566\\ 
+     		x_2 = 3500
+     \end{cases}
+    $$
+    generating a profit of 
+    $$
+    3700 \times 1566 + 5300 \times 3500 = 22934800 \text{   dollars}
+    $$
+    **Therefore, William Smith should now produce $1566$ Family Adventurers and $3500$ Classic Transporters**.
+
+10. 
 
 ## Final Report
 
