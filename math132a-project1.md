@@ -289,21 +289,9 @@
     So **William should not meet the full demand.**
 
 11. Combining all the situations in (6), (7), (8), we formulate the linear programming problem as follows:
-     $$
+    $$
      \text{Similar to (8)}
-     $$
-     
+    $$
+    
 
-## Final Report
-
-### Cover Page
-
-### Description of the Problem
-
-### Model
-
-### Solution of the Model
-
-### Interpretation of the Solution
-
-### Recommendations
+### 
