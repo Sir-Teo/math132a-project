@@ -260,11 +260,43 @@
     $$
     **Therefore, William Smith should now produce $1566$ Family Adventurers and $3500$ Classic Transporters**.
 
-10. 
+10. If the full demand of Classic Transporters are met, then the Linear Programming Problem becomes:
+    $$
+    \begin{cases}
+     		\text{Maximize  } \rightarrow z = 3700x_1 + 5300x_2\\
+     		\text{Subject to:}\\
+     		6x_1 +10.5x_2 \leq 48500\\
+     		4x_1 + 2x_2 \leq 20000\\
+     		x_2 = 3500\\
+     		x_1 \geq 0, x_2 \geq 0
+     \end{cases}
+    $$
+    We found that the optimal solution is when 
+    $$
+    \begin{cases}
+     		x_1 = 1958\\ 
+     		x_2 = 3500
+     \end{cases}
+    $$
+    generating a profit of 
+    $$
+    3700 \times 1958 + 5300 \times 3500 = 24032400 \text{   dollars}
+    $$
+    And comparing the profit in (1),
+    $$
+    27009300 - 24032400 = 2976900 \text{ dollars} > 2000000 \text{ dollars}
+    $$
+    So **William should not meet the full demand.**
+
+11. Combining all the situations in (6), (7), (8), we formulate the linear programming problem as follows:
+     $$
+     \text{Similar to (8)}
+     $$
+     
 
 ## Final Report
 
-### Cover Letter
+### Cover Page
 
 ### Description of the Problem
 
