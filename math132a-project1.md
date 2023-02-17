@@ -274,19 +274,19 @@
     We found that the optimal solution is when 
     $$
     \begin{cases}
-     		x_1 = 1958\\ 
+     		x_1 = 1807\\ 
      		x_2 = 3500
      \end{cases}
     $$
     generating a profit of 
     $$
-    3700 \times 1958 + 5300 \times 3500 = 24032400 \text{   dollars}
+    3700 \times 1807 + 5300 \times 3500 = 25235900 \text{   dollars}
     $$
     And comparing the profit in (1),
     $$
-    27009300 - 24032400 = 2976900 \text{ dollars} > 2000000 \text{ dollars}
+    27009300 - 25235900 = 1773400 \text{ dollars} < 2000000 \text{ dollars}
     $$
-    So **William should not meet the full demand.**
+    So **William can meet the full demand.**
 
 11. Combining all the situations in (6), (7), (8), we formulate the linear programming problem as follows:
     $$
