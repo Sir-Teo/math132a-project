@@ -290,8 +290,29 @@
 
 11. Combining all the situations in (6), (7), (8), we formulate the linear programming problem as follows:
     $$
-     \text{Similar to (8)}
+      \begin{cases}
+        \text{Maximize  } \rightarrow z = 2800x_1 + 5300x_2 -500000 - 1600000\\
+        \text{Subject to:}\\
+        6x_1 +10.5x_2 \leq 60625\\
+        4x_1 + 2x_2 \leq 20000\\
+        x_2 \leq 4200\\
+        x_1 \geq 0, x_2 \geq 0
+      \end{cases}
     $$
-    
+    We found that the solution to this linear programming problem is 
+    $$
+      \begin{cases}
+        x_1 = 2754\\ 
+        x_2 = 4200
+      \end{cases}
+    $$
+    generating a profit of
+    $$
+        2800 \times 2754 + 5300 \times 4200 - 500000 - 1600000= 27871200 \text{   dollars}\\
+    $$
+    $$
+        27871200\text{   dollars} > 27009300\text{   dollars}
+    $$
+    Since the profit is higher than the original profit based on the decisions made in part(6),(7),(8), **William Smith should now produce $2754$ Family Adventurers and $4200$ Classic Transporters**.
 
 ### 
