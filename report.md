@@ -74,7 +74,10 @@ $$
  		x_2 = 2467
  \end{cases}
 $$
-generating a profit of 
+
+## Interpretation of the Solution
+
+The result above means that the objective function is maximized, satisfying all the constraints, when the company produce $3766$ Family Adventurers and $2467$ Classic Transporters, generating a profit of 
 $$
 3700 \times 3766 + 5300 \times 2467 = 27009300 \text{   dollars}
 $$
@@ -82,10 +85,298 @@ To verify that the solution is unique, we plot out the feasible regions as shown
 
 ![](imgs/plot1.png)
 
-We can see from the above plot, that the conditions form a polygon boundary. Since the objective function is not parellel to any of the boundary, there exists an unique optimal to this linear programming problem. Hence there exists an unique solution.
+We can see from the above plot, that the conditions form a polygon boundary. As we increase the objective function $z$, the dashed line moved upward. Since the objective function is not parellel to any of the boundary, there exists an unique optimal to this linear programming problem. Hence there exists an unique solution.
 
-## Interpretation of the Solution
+## Recommendation by Situation
 
+The following corresponds to question (3) - (11) in the prompt
 
+1. The marketing department knows that it can pursue a targeted $\$ 500,000$ advertising campaign that will raise the demand for the Classic Transporter next month by 20 percent. Should the campaign be undertaken?
 
-## Recommendations
+   Since the target campain cost $\$ 500000$, this means that we should take out $500000$​ in the target function. And since this campaign will raise the demand demand for the Classic Transporter next month by $20$ percent,  we have the new Linear Programming Problem:
+   $$
+   \begin{cases}
+    		\text{Maximize  } \rightarrow z = 3700x_1 + 5300x_2 -500000\\
+    		\text{Subject to:}\\
+    		6x_1 +10.5x_2 \leq 48500\\
+    		4x_1 + 2x_2 \leq 20000\\
+    		x_2 \leq 4200\\
+    		x_1 \geq 0, x_2 \geq 0
+    \end{cases}
+   $$
+   We found that the optimal solution is when 
+   $$
+   \begin{cases}
+    		x_1 = 3766\\ 
+    		x_2 = 2467
+    \end{cases}
+   $$
+   generating a profit of 
+   $$
+   3700 \times 3766 + 5300 \times 2467 - 500000 = 26509300 \text{   dollars}
+   $$
+   But this is less than the original profit, which is $27009300$ dollars, so William Smith **should not undertake the campaign.**
+
+2. William knows that he can increase next months plant capacity by using overtime labor. He can increase the plants labor-hour capacity by 25 percent. With the new assembly plant capacity, how many Family Adventurers and how many Classic Transporters should be assembled?
+
+   Since William Smith can increase the plant capacity by $25$ percent, now he has $48500 \times 1.25 = 60625$ labor hours. Now we have the new linear programming problem:
+   $$
+   \begin{cases}
+    		\text{Maximize  } \rightarrow z = 3700x_1 + 5300x_2\\
+    		\text{Subject to:}\\
+    		6x_1 +10.5x_2 \leq 60625\\
+    		4x_1 + 2x_2 \leq 20000\\
+    		x_2 \leq 3500\\
+    		x_1 \geq 0, x_2 \geq 0
+    \end{cases}
+   $$
+   We found that the optimal solution is when 
+   $$
+   \begin{cases}
+    		x_1 = 3250\\ 
+    		x_2 = 3500
+    \end{cases}
+   $$
+   generating a profit of 
+   $$
+   3700 \times 3250 + 5300 \times 3500 = 30575000 \text{   dollars}
+   $$
+   Therefore, **William Smith should now produce $3250$ Family Adventurers and $3500$ Classic Transporters**.
+
+3. William knows that overtime labor does not come without an extra cost. What is the maximum amount he should be willing to pay for all overtime labor beyond the cost of this labor at regular time rates?
+
+   Without the overtime, the company earns a profit of $27009300$ dollars. With overtime, the company now earns a profit of $30575000$ dollars. **So the maximum amount of money William Smith would like to pay is $3565700$ dollars.**
+   $$
+   30575000 - 27009300 = 3565700 \text{ dollars}
+   $$
+
+4. William explores the option of using both the targeted advertising campaign and the overtime labor-hours. The advertising campaign raises the demand for the Classic Transporter by 20 percent, and the overtime labor increases the plants labor-hour capacity by 25 percent. 
+
+  Implementing both advertising and overtime labor will give the new linear programming problem:
+  $$
+  \begin{cases}
+   		\text{Maximize  } \rightarrow z = 3700x_1 + 5300x_2 - 500000\\
+   		\text{Subject to:}\\
+   		6x_1 +10.5x_2 \leq 60625\\
+   		4x_1 + 2x_2 \leq 20000\\
+   		x_2 \leq 4200\\
+   		x_1 \geq 0, x_2 \geq 0
+   \end{cases}
+  $$
+  We found the solution of this linear programming problem to be
+  $$
+  \begin{cases}
+   		x_1 = 2957\\ 
+   		x_2 = 4084
+   \end{cases}
+  $$
+  which generates a profit of 
+  $$
+  3700 \times 2957 + 5300 \times 4084 - 500000 = 32086100 \text{   dollars}
+  $$
+  **Therefore, William Smith should now produce $2957$ Family Adventurers and $4084$ Classic Transporters**.
+
+5. Knowing that the advertising campaign costs $\$ 500,000$ and the maximum usage of overtime labor-hours cost $\$ 1,600,000$, is the solution found in part (6) a wise decision compared to the solution found in the beginning?
+
+  Since the overtime labor costs $1600000$ dolars, the new profit for implementing both advertising and overtime labor yields a profit of 
+  $$
+  32086100 - 1600000 = 30486100 \text{ dollars}
+  $$
+  And we have $30486100 > 27009300 \text{ dollars}$ we implementing both **is a wise decision**.
+
+6. The company has determined that dealerships are actually heavily discounting the price of the Family Adventurers to move them off the lot. Because of a profit-sharing agreement with its dealers, the company is therefore not making a profit of $\$ 3700$ on the Family Adventurer but is instead making a profit of $\$ 2,800$. 
+
+   There will be four scenarios. Notice that **we assume that the overtime pay does not cost extra money.**
+
+   1. using both advertising and overtime labor
+
+      Now the linear programming problem becomes:
+      $$
+      \begin{cases}
+       		\text{Maximize  } \rightarrow z = 2800x_1 + 5300x_2 -500000\\
+       		\text{Subject to:}\\
+       		6x_1 +10.5x_2 \leq 60625\\
+       		4x_1 + 2x_2 \leq 20000\\
+       		x_2 \leq 4200\\
+       		x_1 \geq 0, x_2 \geq 0
+       \end{cases}
+      $$
+      We found that the solution to this linear programming problem is 
+      $$
+      \begin{cases}
+       		x_1 = 2754\\ 
+       		x_2 = 4200
+       \end{cases}
+      $$
+      generating a profit of
+      $$
+      2800 \times 2754 + 5300 \times 4200 - 500000 = 29471200 \text{   dollars}
+      $$
+
+   2. using overtime labor only
+
+      Now the linear programming problem becomes:
+      $$
+      \begin{cases}
+       		\text{Maximize  } \rightarrow z = 2800x_1 + 5300x_2\\
+       		\text{Subject to:}\\
+       		6x_1 +10.5x_2 \leq 60625\\
+       		4x_1 + 2x_2 \leq 20000\\
+       		x_2 \leq 3500\\
+       		x_1 \geq 0, x_2 \geq 0
+       \end{cases}
+      $$
+      We found that the solution to this linear programming problem is 
+      $$
+      \begin{cases}
+       		x_1 = 3250\\ 
+       		x_2 = 3500
+       \end{cases}
+      $$
+      generating a profit of
+      $$
+      2800 \times 3200 + 5300 \times 3500 = 27650000 \text{   dollars}
+      $$
+
+   3. using advertising only
+
+      Now the linear programming problem becomes:
+      $$
+      \begin{cases}
+       		\text{Maximize  } \rightarrow z = 2800x_1 + 5300x_2 -500000\\
+       		\text{Subject to:}\\
+       		6x_1 +10.5x_2 \leq 48500\\
+       		4x_1 + 2x_2 \leq 20000\\
+       		x_2 \leq 4200\\
+       		x_1 \geq 0, x_2 \geq 0
+       \end{cases}
+      $$
+      We found that the solution to this linear programming problem is 
+      $$
+      \begin{cases}
+       		x_1 = 735\\ 
+       		x_2 = 4199
+       \end{cases}
+      $$
+      generating a profit of
+      $$
+      2800 \times 735 + 5300 \times 4199 - 500000 = 23812700 \text{   dollars}
+      $$
+
+   4. using neither advertising nor overtime labor
+
+      Now the linear programming problem becomes:
+      $$
+      \begin{cases}
+       		\text{Maximize  } \rightarrow z = 2800x_1 + 5300x_2\\
+       		\text{Subject to:}\\
+       		6x_1 +10.5x_2 \leq 48500\\
+       		4x_1 + 2x_2 \leq 20000\\
+       		x_2 \leq 3500\\
+       		x_1 \geq 0, x_2 \geq 0
+       \end{cases}
+      $$
+      We found that the solution to this linear programming problem is 
+      $$
+      \begin{cases}
+       		x_1 = 1960\\ 
+       		x_2 = 3499
+       \end{cases}
+      $$
+      generating a profit of
+      $$
+      2800 \times 1960 + 5300 \times 3499 = 24032700 \text{   dollars}
+      $$
+
+   Comparing all four scenarios, option 1 generates a profit of $29471200$ dolloars, which is the most. So William Smith should **consider implenting both advertising and overtime labor.**
+
+7. The company has discovered quality problems with the Family Adventurer by randomly testing Adventurers at the end of the assembly line. Inspectors have discovered that in over 60 percent of the cases, two of the four doors on an Adventurer do not seal properly. Because the percentage of defective Adventurers determined by the random testing is so high, the floor supervisor has decided to perform quality control tests on every Adventurer at the end of the line. Because of the added tests, the time it takes to assemble one Family Adventurer has increased from 6 to $7.5$ hours.
+
+   With the new time to assemble the Adventurer, assume that William is not implementing advertisesment or overtime labor, and the profit of adventurer did not drop, we have the linear programming problem as follows:
+   $$
+   \begin{cases}
+    		\text{Maximize  } \rightarrow z = 3700x_1 + 5300x_2\\
+    		\text{Subject to:}\\
+    		7.5x_1 +10.5x_2 \leq 48500\\
+    		4x_1 + 2x_2 \leq 20000\\
+    		x_2 \leq 3500\\
+    		x_1 \geq 0, x_2 \geq 0
+    \end{cases}
+   $$
+   We found that the optimal solution is when 
+   $$
+   \begin{cases}
+    		x_1 = 1568\\ 
+    		x_2 = 3499
+    \end{cases}
+   $$
+   generating a profit of 
+   $$
+   3700 \times 1568 + 5300 \times 3499 = 24346300 \text{   dollars}
+   $$
+   **Therefore, William Smith should now produce $1568$ Family Adventurers and $3499$ Classic Transporters**.
+
+8. The board of directors of the automobile company wishes to capture a larger share of the luxury sedan market and therefore would like to meet the full demand for Classic Trasnporters. They ask William to determine by how much the profit of his assembly plant would decrease as compared to the profit found in part (1). They then ask him to meet the full demand for Classic Transporters if the decrease in profit is not more than $\$ 2,000,000$.
+
+   If the full demand of Classic Transporters are met, then the Linear Programming Problem becomes:
+   $$
+   \begin{cases}
+    		\text{Maximize  } \rightarrow z = 3700x_1 + 5300x_2\\
+    		\text{Subject to:}\\
+    		6x_1 +10.5x_2 \leq 48500\\
+    		4x_1 + 2x_2 \leq 20000\\
+    		x_2 = 3500\\
+    		x_1 \geq 0, x_2 \geq 0
+    \end{cases}
+   $$
+   We found that the optimal solution is when 
+   $$
+   \begin{cases}
+    		x_1 = 1958\\ 
+    		x_2 = 3500
+    \end{cases}
+   $$
+   generating a profit of 
+   $$
+   3700 \times 1958 + 5300 \times 3500 = 25403000 \text{   dollars}
+   $$
+   And comparing the profit in (1),
+   $$
+   27009300 - 25403000 = 1606300 \text{ dollars} < 2000000 \text{ dollars}
+   $$
+   So **William can meet the full demand.**
+
+9. William now makes his final decision by combining all the new considerations described in parts (6), (7), and (8). What are his final decisions on whether to undertake the advertising campaign?
+
+   Combining all the situations in (6), (7), (8), we formulate the linear programming problem as follows:
+   $$
+     \begin{cases}
+       \text{Maximize  } \rightarrow z = 2800x_1 + 5300x_2 -500000 - 1600000\\
+       \text{Subject to:}\\
+       6x_1 +10.5x_2 \leq 60625\\
+       4x_1 + 2x_2 \leq 20000\\
+       x_2 \leq 4200\\
+       x_1 \geq 0, x_2 \geq 0
+     \end{cases}
+   $$
+   We found that the solution to this linear programming problem is 
+   $$
+     \begin{cases}
+       x_1 = 2754\\ 
+       x_2 = 4200
+     \end{cases}
+   $$
+   generating a profit of
+   $$
+       2800 \times 2754 + 5300 \times 4200 - 500000 - 1600000= 27871200 \text{   dollars}\\
+   $$
+
+   $$
+       27871200\text{   dollars} > 27009300\text{   dollars}
+   $$
+
+   Since the profit is higher than the original profit based on the decisions made in part(6),(7),(8), **William Smith should now produce $2754$ Family Adventurers and $4200$ Classic Transporters**.
+
+## Conclusion
+
+Given all William Smith's options and possible situations, he should **undertake advertisement and use overtime labor** in any circumstances in order to maximize profit.
